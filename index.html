@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" lang="de" content="Zeitleiste, Zeitlinie, Zeitkarte, Geschichte, Chronologie">
-    <meta name="keywords" lang="en" content="Timeline, Timemap, History, Chronology">
     <title>Timeline - Proof-of-concept</title>
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- That's my local d3 path. When working locally, use your local path. -->
     <!--<script src="../../../lib/d3/d3.v3.js"></script>-->
@@ -21,7 +23,24 @@
 
 <body>
 
-<div id="timeline"></div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img class="header-image" alt="Brand" src="images/punkt-logo-orange-125x70.png">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="page-header">
+          <h1>20th-century Orchestral Performances by Composer <small>1914-1970</small></h1>
+        </div>
+        <div class="viz-container">
+            <div id="timeline"></div>
+            <p class="data-source">Data source: <a href="#" title="Lorem ipsum">Lorem ipsum</a></p>
+        </div>          
+    </div>
 
 <script>
 

@@ -1,3 +1,35 @@
+body { 
+    height:100%;
+    margin:0;
+    padding-top:0;
+}
+
+.viz-container {
+    padding:40px;
+    margin:0 auto;
+    background-color: #f8f8f8;
+    box-shadow: inset 1px 1px 0 rgba(217,205,193,0.4),inset 0 -1px 0 rgba(217,205,193,0.35);
+}
+
+#timeline {
+    display:block;
+    margin:0 auto;
+}
+
+.data-source {
+    padding-top:20px;
+    text-align:left;
+    font-size:12px;
+}
+
+.navbar-brand {
+    padding:10px 15px;
+}
+
+.navbar-brand img {
+    max-height:40px;
+}
+
 /* axis */
 
 .axis { /* axis labels */
