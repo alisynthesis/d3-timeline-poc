@@ -226,13 +226,18 @@ function timeline(domElement) {
             .text(function (d) { return d.label; });
 
         var instants = d3.select("#band" + bandNum).selectAll(".instant");
-        instants.append("circle")
-            .attr("cx", band.itemHeight / 2)
-            .attr("cy", band.itemHeight / 2)
-            .attr("r", 5);
+        // instants.append("circle")
+        //     .attr("cx", band.itemHeight / 2)
+        //     .attr("cy", band.itemHeight / 2)
+        //     .attr("r", 5);
+        instants.append("text")            
+            .attr("class", "fa")
+            .attr("x", 15)
+            .attr("y", 10)
+            .text( "\uF041" );
         instants.append("text")
             .attr("class", "instantLabel")
-            .attr("x", 15)
+            .attr("x", 30)
             .attr("y", 10)
             .text(function (d) { return d.label; });
 
