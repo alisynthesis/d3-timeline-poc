@@ -19,7 +19,7 @@ function timeline(domElement) {
     var timeline = {},   // The timeline
         data = {},       // Container for the data
         components = [], // All the components of the timeline for redrawing
-        bandGap = 25,    // Arbitray gap between to consecutive bands
+        bandGap = 25,    // Arbitray gap between two consecutive bands
         bands = {},      // Registry for all the bands in the timeline
         bandY = 0,       // Y-Position of the next band
         bandNum = 0;     // Count of bands for ids
@@ -347,9 +347,9 @@ function timeline(domElement) {
         function getHtml(element, d) {
             var html;
             if (element.attr("class") == "interval") {
-                html = d.label + "<br>" + toYear(d.start) + " - " + toYear(d.end);
+                html = "<h3>" + d.label + "</h3>" + "<br>" + toYear(d.start) + " - " + toYear(d.end) + "<br>" + d.description;
             } else {
-                html = d.label + "<br>" + toYear(d.start);
+                html = "<h3>" + d.label + "</h3>" + "<br>" + toYear(d.start) + "<br>" + d.description;
             }
             return html;
         }
