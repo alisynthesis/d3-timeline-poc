@@ -111,6 +111,10 @@ body {
     fill:#333333;
 }
 
+#band1 .instant .fa, #band0 .instant circle {
+    display:none;
+}
+
 .instantLabel {
     fill : #333333;
     shape-rendering: crispEdges;

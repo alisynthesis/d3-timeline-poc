@@ -226,10 +226,10 @@ function timeline(domElement) {
             .text(function (d) { return d.label; });
 
         var instants = d3.select("#band" + bandNum).selectAll(".instant");
-        // instants.append("circle")
-        //     .attr("cx", band.itemHeight / 2)
-        //     .attr("cy", band.itemHeight / 2)
-        //     .attr("r", 5);
+        instants.append("circle")
+            .attr("cx", band.itemHeight / 2)
+            .attr("cy", band.itemHeight / 2)
+            .attr("r", 5);
         instants.append("text")            
             .attr("class", "fa")
             .attr("x", 15)
